@@ -17,28 +17,23 @@ pip install -r requirements.txt
 
 4. Train the model
 ```bash
-python simple_neural_network.py
+python app/simple_neural_network.py
 ```
 
 5. Run the API server
 ```bash
-python api_server.py
+python app/api_server.py
 ```
 
 ## Docker Implementation
 
 
-1. Train the model first
-```bash
-python simple_neural_network.py
-```
-
-2. Build the Docker image
+1. Build the Docker image
 ```bash
 docker build -t simple_nn .
 ```
 
-3. Run the container
+2. Run the container
 ```bash
 docker run --name simple_nn_container -p 8000:8000 simple_nn
 ```
